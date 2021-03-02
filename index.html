@@ -7,19 +7,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tortownia Sandomierz | Torty ciasta i inne wypieki</title>
         <link rel="stylesheet" type="text/css" href="data/css/index.css">
+        <link rel="stylesheet" media="screen and (min-width: 120px) and (max-width: 1100px)" href="data/css/indexres.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 <body>
     <div class="content">
         <div class="header">
             <div class="header-wrap">
-                <a href="https://tortowniasandomierz.pl"><img id="logo" src="data/img/torty.png"></a>
-                <div class="header-text"><img id="text-header" src="data/img/text.png"></div>
+                <a href="https://tortowniasandomierz.pl"><img id="logo" src="data/img/torty.png" alt="Logo"></a>
+                <div class="hamburger-button">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="header-text"><img id="text-header" src="data/img/text.png" alt="Torty ciasta i inne wypieki"></div>
                 <div class="buttons-list">
                     <a href="gallery.html"><div class="main-button">Galeria</div></a>
                     <a href="offer.html"><div class="main-button">Oferta</div></a>
                     <a href="contact.php"><div class="main-button">Kontakt</div></a>
+                </div>
+                <div class="mobile" style="display: none;">
+                    <a href="offer.html"><div class="mobile-button" style="display: none;">Oferta</div></a>
+                    <a href="gallery.html"><div class="mobile-button" style="display: none;">Galeria</div></a>
+                    <a href="contact.php"><div class="mobile-button" style="display: none;">Kontakt</div></a>
                 </div>
             </div>
         </div>

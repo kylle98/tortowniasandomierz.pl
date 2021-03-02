@@ -40,7 +40,7 @@ a {
 
 .header-text {
     position: relative;
-    margin-left: 30%;
+    margin-left: 5%;
 }
 
 .buttons-list {
@@ -48,17 +48,27 @@ a {
     justify-content: space-around;
     width: 475px;
     position: absolute;
-    right: 80px;
+    right: 60px;
 }
 
 .main-button {
     font-family: 'Itim', cursive;
     color: purple;
-    font-size: 28px;
+    font-size: 1.75rem;
     transition: 0.5s;
 }
 
 .main-button:hover {
     color: black;
     transition: 0.5s;
+}
+
+@media screen and (max-width: 1049px) {
+    .header-text {
+        display: none;
+    }
+
+    .buttons-list {
+        right: 20px;
+    }
 }
