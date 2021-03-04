@@ -1,0 +1,11 @@
+.header-logo {
+    width: 100%;
+}
+
+.buttons-list {
+    display: none;
+}
+
+.hamburger-button {
+    display: block;
+}
