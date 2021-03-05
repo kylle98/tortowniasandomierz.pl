@@ -1,9 +1,15 @@
 .header-logo {
+    margin: 0 auto;
+    width: 30%;
+}
+
+.header-wrap {
     width: 100%;
 }
 
 .buttons-list {
     display: none;
+    right: 20px;
 }
 
 .hamburger-button {

@@ -11,25 +11,26 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="data/script/menu.js"></script>
     </head>
 <body>
     <div class="content">
+        <div class="mobile-oppacity" style="display: none;"></div>
         <div class="header">
             <div class="header-wrap">
                 <div class="header-logo"></div>
-                <div class="hamburger-button">
+                <div class="hamburger-button" onclick="menusetting(0)">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
-                <div class="header-text"><img id="text-header" src="data/img/text.png" alt="Torty ciasta i inne wypieki"></div>
                 <div class="buttons-list">
                     <a href="gallery.html"><div class="main-button">Galeria</div></a>
                     <a href="offer.html"><div class="main-button">Oferta</div></a>
                     <a href="contact.php"><div class="main-button">Kontakt</div></a>
                 </div>
                 <div class="mobile" style="display: none;">
-                    <a href="offer.html"><div class="mobile-button" style="display: none;">Oferta</div></a>
-                    <a href="gallery.html"><div class="mobile-button" style="display: none;">Galeria</div></a>
-                    <a href="contact.php"><div class="mobile-button" style="display: none;">Kontakt</div></a>
+                    <a href="offer.html"><div class="mobile-button mobile-button-first" style="display: none;" onclick="menusetting(1)">Oferta</div></a>
+                    <a href="gallery.html"><div class="mobile-button" style="display: none;" onclick="menusetting(1)">Galeria</div></a>
+                    <a href="contact.php"><div class="mobile-button" style="display: none;" onclick="menusetting(1)">Kontakt</div></a>
                 </div>
             </div>
         </div>
