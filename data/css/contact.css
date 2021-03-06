@@ -1,0 +1,34 @@
+.contact-content {
+    position: relative;
+    width: 100%;
+}
+
+.contact-header {
+    position: relative;
+    width: 45%;
+    font-size: 2vw;
+    font-family: 'Itim', cursive;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    border-bottom: 1px solid purple;
+    color: black;
+}
+
+.contact-text {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Itim', cursive;
+    font-size: 1.2vw;
+}
+
+p {
+    text-align: center;
+    margin-top: 55px;
+}
+
+a {
+    color: purple;
+}

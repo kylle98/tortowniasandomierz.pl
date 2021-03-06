@@ -7,12 +7,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tortownia Sandomierz | Kontakt</title>
         <link rel="stylesheet" type="text/css" href="data/css/header.css"> <!-- Header style -->
+        <link rel="stylesheet" type="text/css" href="data/css/contact.css"> <!-- Index style -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="data/script/menu.js"></script>
     </head>
 <body>
-
+    <div class="content">
+        <div class="mobile-oppacity" style="display: none;"></div>
+        <div class="header">
+            <div class="header-wrap">
+                <div class="header-logo"></div>
+                <div class="hamburger-button" onclick="menusetting(0)">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="buttons-list">
+                    <a href="gallery.html"><div class="main-button">Galeria</div></a>
+                    <a href="offer.html"><div class="main-button">Oferta</div></a>
+                    <a href="contact.html"><div class="main-button">Kontakt</div></a>
+                </div>
+                <div class="mobile" style="display: none;">
+                    <a href="offer.html"><div class="mobile-button mobile-button-first" style="display: none;" onclick="menusetting(1)">Oferta</div></a>
+                    <a href="gallery.html"><div class="mobile-button" style="display: none;" onclick="menusetting(1)">Galeria</div></a>
+                    <a href="contact.html"><div class="mobile-button" style="display: none;" onclick="menusetting(1)">Kontakt</div></a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-header">
+                <h1> Kontakt i adres </h1>
+            </div>
+        <div class="contact-text">
+            <p>Ulica Wiejska 3<br>27-600 Sandomierz</p>
+            <p>Telefon kontaktowy:<br>791 404 202</p>
+            <p>Email:<br> <a href="mailto:kontakt@tortowniasandomierz.pl">kontakt@tortowniasandomierz.pl</a></p>
+            <p>Znajdziesz nas również na  <a href="#" class="fa fa-facebook"> Facebook'u</a></p>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.6871504660985!2d21.72945001596154!3d50.68863187805466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722b501cecf5455%3A0x56e59704a5d04dbd!2sWiejska%203%2C%2027-600%20Sandomierz!5e0!3m2!1spl!2spl!4v1614991364090!5m2!1spl!2spl" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
