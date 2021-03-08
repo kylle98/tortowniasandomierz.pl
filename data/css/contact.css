@@ -33,6 +33,12 @@ a {
     color: purple;
 }
 
+.map {
+    height: 350px;
+    width: 100%;
+    border: 0;
+}
+
 .footer {
     position: relative;
     display: flex;
