@@ -34,9 +34,9 @@ a {
     width: 100%;
     height: 150px;
     position: relative;
-    background: -webkit-linear-gradient(-90deg, rgba(242,145,240,1) 0, rgba(242,145,240,1) 39%, rgba(255,255,255,0) 100%), -webkit-radial-gradient(closest-side, rgba(242,145,240,1) 0, rgba(242,145,240,1) 53%, rgba(255,255,255,0.03) 100%);
-    background: -moz-linear-gradient(180deg, rgba(242,145,240,1) 0, rgba(242,145,240,1) 39%, rgba(255,255,255,0) 100%), -moz-radial-gradient(closest-side, rgba(242,145,240,1) 0, rgba(242,145,240,1) 53%, rgba(255,255,255,0.03) 100%);
-    background: linear-gradient(180deg, rgba(242,145,240,1) 0, rgba(242,145,240,1) 39%, rgba(255,255,255,0) 100%), radial-gradient(closest-side, rgba(242,145,240,1) 0, rgba(242,145,240,1) 53%, rgba(255,255,255,0.03) 100%);
+    background: -webkit-linear-gradient(-90deg, rgba(236, 176, 209,1) 0, rgba(236, 176, 209,1) 39%, rgba(255,255,255,0) 100%), -webkit-radial-gradient(closest-side, rgba(236, 176, 209,1) 0, rgba(236, 176, 209,1) 53%, rgba(255,255,255,0.03) 100%);
+    background: -moz-linear-gradient(180deg, rgba(236, 176, 209,1) 0, rgba(236, 176, 209,1) 39%, rgba(255,255,255,0) 100%), -moz-radial-gradient(closest-side, rgba(236, 176, 209,1) 0, rgba(236, 176, 209,1) 53%, rgba(255,255,255,0.03) 100%);
+    background: linear-gradient(180deg, rgba(236, 176, 209,1) 0, rgba(236, 176, 209,1) 39%, rgba(255,255,255,0) 100%), radial-gradient(closest-side, rgba(236, 176, 209,1) 0, rgba(236, 176, 209,1) 53%, rgba(255,255,255,0.03) 100%);
     background-position: 50% 50%;
     -webkit-background-origin: padding-box;
     background-origin: padding-box;
@@ -114,19 +114,19 @@ a {
     padding: 10px;
     padding-left: 0;
     z-index: 9;
-    background-color: #f6bff5;
+    background-color: #ecd0d1;
     width: 100%;
     color: black;
     font-family: 'Itim', cursive;
-    border-bottom: 1px solid purple;
+    border-bottom: 1px solid #4f1743;
     font-size: 18px;
     text-align: center;
 
 }
 
 .mobile-button-first {
-    background: linear-gradient(0deg, rgba(246,191,245,1) 20%, rgba(255,255,255,1) 100%);
-    border-top: 3px solid rgba(242,145,240,1);
+    background: linear-gradient(0deg, rgba(236,208,209,1) 20%, rgba(255,255,255,1) 100%);
+    border-top: 3px solid #4f1743;
 }
 
 /* Media query */
