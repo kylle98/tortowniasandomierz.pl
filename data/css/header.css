@@ -17,7 +17,7 @@ a {
     position: relative;
 }
 
-.mobile-oppacity {
+.mobile-opacity {
     position: fixed;
     display: none;
     left: 0;
@@ -111,8 +111,7 @@ a {
 
 .mobile-button {
     display: none;
-    padding: 10px;
-    padding-left: 0;
+    padding: 10px 10px 10px 0;
     z-index: 9;
     background-color: #ecd0d1;
     width: 100%;
@@ -130,7 +129,7 @@ a {
 }
 
 /* Media query */
-@media screen and (min-width: 120px) and (max-width: 1200px) {
+@media screen and (min-width: 120px) and (max-width: 1250px) {
     .header-logo {
         margin: 0 auto;
         width: 30%;
