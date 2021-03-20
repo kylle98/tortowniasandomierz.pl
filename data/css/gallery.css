@@ -1,0 +1,17 @@
+.gallery-content {
+    position: relative;
+    width: 70%;
+}
+
+.gallery-content {
+    position: relative;
+    width: 45%;
+    font-size: 19px;
+    font-family: 'Itim', cursive;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    border-bottom: 1px solid purple;
+    color: black;
+}
