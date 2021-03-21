@@ -16,9 +16,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="data/script/menu.js"></script>
+        <script type="text/javascript" src="data/script/menu.js"></script>
+        <script type="text/javascript" src="data/script/sorting.js"></script>
     </head>
-<body>
+    <body onload="filterSelection('all')">
     <div class="content">
         <div class="mobile-opacity" style="display: none;"></div>
         <div class="header">
@@ -36,6 +37,209 @@
                     <a href="offer.html"><div class="mobile-button mobile-button-first" style="display: none;" onclick="menusetting(1)">Oferta</div></a>
                     <a href="gallery.html"><div class="mobile-button" style="display: none;" onclick="menusetting(1)">Galeria</div></a>
                     <a href="contact.html"><div class="mobile-button" style="display: none;" onclick="menusetting(1)">Kontakt</div></a>
+                </div>
+            </div>
+        </div>
+        <div class="offer-content">
+            <div class="offer-header">
+                <h1> Oferta </h1>
+            </div>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('cake')"> Torty</button>
+                <button class="btn" onclick="filterSelection('pie')"> Ciasta</button>
+            </div>
+            <div class="row">
+                <div class="column cake">
+                    <div class="contento">
+                        <img src="data/gallery/tort1.jpg" alt="Cake nr 1" style="width:100%">
+                        <h4>Tort nr 1</h4>
+                        <p>Tort orzechowo czekoladowo kawowy z tradycyjną masą budyniowo maślaną.
+                            -ciasto czekoladowe, powidła śliwkowe, masa kawowa, ciasto orzechowe, masa
+                            czekoladowa ze śliwką kalifornijską, ciasto czekoladowe, masa orzechowa, ciasto
+                            orzechowe, nasączony ponczem kawowym z rumem.</p>
+                    </div>
+                </div>
+                <div class="column cake">
+                    <div class="contento">
+                        <img src="data/gallery/tort2.jpg" alt="Cake nr 2" style="width:100%">
+                        <h4>Tort nr 2</h4>
+                        <p>Tort Ambasador z tradycyjną masą budyniowo maślaną
+                            -ciasto czekoladowe, konfitura z czarnej porzeczki, masa czekoladowa, ciasto jasne,
+                            masa waniliowa z ananasem, ciasto czekoladowe, masa kawowa z kawałkami
+                            mlecznej czekolady, ciasto jasne, nasączony ponczem cytrynowym.</p>
+                    </div>
+                </div>
+                <div class="column cake">
+                    <div class="contento">
+                        <img src="data/gallery/tort3.jpg" alt="Cake nr 3" style="width:100%">
+                        <h4>Tort nr 3</h4>
+                        <p>Tort owocowy
+                            ciasto jasne, masa maślano budyniowa waniliowa z brzoskwinią, ciasto jasne,
+                            frużelina malinowa (własnej produkcji), krem śmietankowo malinowy z
+                            mascarpone, ciasto jasne, nasączony ponczem cytrynowym.</p>
+                    </div>
+                </div>
+                <div class="column cake">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Cake nr 4" style="width:100%">
+                        <h4>Tort nr 4</h4>
+                        <p>Tort malina mango z chrupiącą praliną z białej czekolady.
+                            Ciasto jasne, warstwa chrupiącej praliny, mus z mango, ciasto jasne, krem
+                            śmietanowo malinowy z mascarpone i malinami, nasączony ponczem cytrynowym.</p>
+                    </div>
+                </div>
+                <div class="column cake">
+                    <div class="contento">
+                        <img src="data/gallery/unknown.jpg" alt="Cake nr 5" style="width:100%">
+                        <h4>Tort nr 5</h4>
+                        <p>Tort czekoladowo bananowy z frużeliną wiśniową.
+                            Ciasto czekoladowe, masa śmietankowo czekoladowa z mascarpone, frużelina
+                            wiśniowa, ciasto czekoladowe, masa śmietankowa z mascarpone i bananami, ciasto
+                            czekoladowe, nasączony ponczem kawowym.</p>
+                    </div>
+                </div>
+                <div class="column cake">
+                    <div class="contento">
+                        <img src="data/gallery/unknown.jpg" alt="Cake nr 6" style="width:100%">
+                        <h4>Tort nr 6</h4>
+                        <p>Tort czekoladowo wiśniowo malinowy.
+                            Ciasto czekoladowe, masa maślano budyniowo czekoladowa, ciasto czekoladowe,
+                            konfitura wiśniowa, krem śmietanowo malinowy z mascarpone, ciasto czekoladowe,
+                            nasączony ponczem cytrynowym.</p>
+                    </div>
+                </div>
+                <div class="column pie">
+                    <div class="contento">
+                        <img src="data/gallery/tort7.jpg" alt="Cake nr 7" style="width:100%">
+                        <h4>Tort nr 7</h4>
+                        <p>Tort orzechowo bezowy z tradycyjną masą budyniowo maślaną.
+                            -Ciasto orzechowe, powidła śliwkowe, krem kawowy, beza, krem czekoladowy,
+                            beza, krem orzechowy, ciasto orzechowe, nasączony ponczem kawowym.</p>
+                    </div>
+                </div>
+                <div class="column pie">
+                    <div class="contento">
+                        <img src="data/gallery/tort8.jpg" alt="Cake nr 8" style="width:100%">
+                        <h4>Tort nr 8</h4>
+                        <p>Tort czekoladowy Oreo malina
+                            Ciasto czekoladowe, krem śmietankowy z mascarpone i ciasteczkami oreo, ciasto
+                            czekoladowe, konfitura malinowa (własnej produkcji), krem śmietankowo malinowy
+                            z mascarpone, krem śmietankowo czekoladowy z mascarpone, ciasto czekoladowe,
+                            nasączony ponczem malinowym.</p>
+                    </div>
+                </div>
+                <div class="column pie">
+                    <div class="contento">
+                        <img src="data/gallery/unknown.jpg" alt="Cake nr 9" style="width:100%">
+                        <h4>Tort nr 9</h4>
+                        <p>Tort czekoladowo bananowy z solonym karmelem
+                            Ciasto czekoladowe, konfitura z czarnej porzeczki, krem czekoladowo śmietankowy
+                            z mascarpone, ciasto czekoladowe, krem śmietankowy z solonym karmelem i
+                            bananami, ciasto czekoladowe, nasączony ponczem porzeczkowym.</p>
+                    </div>
+                </div>
+                <div class="column pie">
+                    <div class="contento">
+                        <img src="data/gallery/unknown.jpg" alt="Cake nr 10" style="width:100%">
+                        <h4>Tort nr 10</h4>
+                        <p>Tort sezonowy, owocowy. (Dostępny tylko w sezonie letnim)
+                            Ciasto biszkoptowe jasne, frużelina ze świeżych owoców (własnej produkcji),
+                            masa śmietankowa z mascarpone i laską wanilii z sezonowymi owocami, ciasto
+                            jasne, masa śmietankowa z mascarpone i wanilią z owocami, ciasto jasne,
+                            nasączony ponczem cytrynowym.</p>
+                    </div>
+                </div>
+                <div class="column cake">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Mountains" style="width:100%">
+                        <h4>Mountains</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column cake">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Lights" style="width:100%">
+                        <h4>Lights</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column cake">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Nature" style="width:100%">
+                        <h4>Forest</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column cake">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                        <h4>Retro</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column cake">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                        <h4>Fast</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column cake">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                        <h4>Classic</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column pie">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                        <h4>Girl</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column pie">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                        <h4>Man</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column pie">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                        <h4>Woman</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column pie">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                        <h4>Woman</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column pie">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                        <h4>Man</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column pie">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                        <h4>Woman</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column pie">
+                    <div class="contento">
+                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                        <h4>Woman</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
                 </div>
             </div>
         </div>
