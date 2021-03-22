@@ -54,15 +54,19 @@
 .row:after {
     content: "";
     display: table;
-    clear: both;
+
 }
 
 /* Content */
 .contento {
     background-color: white;
     padding: 10px;
-    border-radius: 0 0 50px 50px;
-    min-height: 730px;
+    border-radius: 15px 15px 50px 50px;
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
 }
 
 /* The "show" class is added to the filtered elements */
