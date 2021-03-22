@@ -34,13 +34,11 @@
     flex-wrap: wrap;
 }
 
-/* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
     padding: 8px;
 }
 
-/* Create three equal columns that floats next to each other */
 .column {
 
     width: 25%;
@@ -50,7 +48,6 @@
     font-size: 18px;
 }
 
-/* Clear floats after rows */
 .row:after {
     content: "";
     display: table;
@@ -62,13 +59,15 @@
     background-color: white;
     padding: 10px;
     border-radius: 15px 15px 50px 50px;
-    min-height: 750px;
+    min-height: 747px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: space-around;
+    justify-content: space-between;
 }
 
+.ck {
+    justify-content: flex-start;
+}
 /* The "show" class is added to the filtered elements */
 .show {
     display: block;
