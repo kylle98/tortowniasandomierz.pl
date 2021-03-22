@@ -13,7 +13,6 @@
         <link rel="stylesheet" type="text/css" href="data/css/header.css"> <!-- Header style -->
         <link rel="stylesheet" type="text/css" href="data/css/offer.css"> <!-- Index style -->
         <link rel="stylesheet" type="text/css" href="data/css/footer.css"> <!-- Footer style -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="data/script/menu.js"></script>
@@ -44,14 +43,14 @@
             <div class="offer-header">
                 <h1> Oferta </h1>
             </div>
-            <div id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')">Wszystko</button>
-                <button class="btn" onclick="filterSelection('cake')">Torty</button>
-                <button class="btn" onclick="filterSelection('pie')">Ciasta</button>
+            <div id="sortButtonContainer">
+                <button class="sort-button active" onclick="filterSelection('all')">Wszystko</button>
+                <button class="sort-button" onclick="filterSelection('cake')">Torty</button>
+                <button class="sort-button" onclick="filterSelection('pie')">Ciasta</button>
             </div>
             <div class="row">
                 <div class="column cake">
-                    <div class="contento ck">
+                    <div class="offers ck">
                         <img src="data/gallery/tort1.jpg" alt="Cake nr 1" style="width:100%">
                         <h4>Tort nr 1</h4>
                         <p>Tort orzechowo czekoladowo kawowy z tradycyjną masą budyniowo maślaną.
@@ -61,7 +60,7 @@
                     </div>
                 </div>
                 <div class="column cake">
-                    <div class="contento ck">
+                    <div class="offers ck">
                         <img src="data/gallery/tort2.jpg" alt="Cake nr 2" style="width:100%">
                         <h4>Tort nr 2</h4>
                         <p>Tort Ambasador z tradycyjną masą budyniowo maślaną
@@ -71,7 +70,7 @@
                     </div>
                 </div>
                 <div class="column cake">
-                    <div class="contento ck">
+                    <div class="offers ck">
                         <img src="data/gallery/tort3.jpg" alt="Cake nr 3" style="width:100%">
                         <h4>Tort nr 3</h4>
                         <p>Tort owocowy
@@ -81,7 +80,7 @@
                     </div>
                 </div>
                 <div class="column cake">
-                    <div class="contento ck">
+                    <div class="offers ck">
                         <img src="data/gallery/tort4.jpg" alt="Cake nr 4" style="width:100%">
                         <h4>Tort nr 4</h4>
                         <p>Tort malina mango z chrupiącą praliną z białej czekolady.
@@ -90,7 +89,7 @@
                     </div>
                 </div>
                 <div class="column cake">
-                    <div class="contento ck">
+                    <div class="offers ck">
                         <img src="data/gallery/unknown.jpg" alt="Cake nr 5" style="width:100%">
                         <h4>Tort nr 5</h4>
                         <p>Tort czekoladowo bananowy z frużeliną wiśniową.
@@ -100,7 +99,7 @@
                     </div>
                 </div>
                 <div class="column cake">
-                    <div class="contento ck">
+                    <div class="offers ck">
                         <img src="data/gallery/unknown.jpg" alt="Cake nr 6" style="width:100%">
                         <h4>Tort nr 6</h4>
                         <p>Tort czekoladowo wiśniowo malinowy.
@@ -110,7 +109,7 @@
                     </div>
                 </div>
                 <div class="column cake">
-                    <div class="contento ck">
+                    <div class="offers ck">
                         <img src="data/gallery/tort7.jpg" alt="Cake nr 7" style="width:100%">
                         <h4>Tort nr 7</h4>
                         <p>Tort orzechowo bezowy z tradycyjną masą budyniowo maślaną.
@@ -119,7 +118,7 @@
                     </div>
                 </div>
                 <div class="column cake">
-                    <div class="contento ck">
+                    <div class="offers ck">
                         <img src="data/gallery/tort8.jpg" alt="Cake nr 8" style="width:100%">
                         <h4>Tort nr 8</h4>
                         <p>Tort czekoladowy Oreo malina
@@ -130,7 +129,7 @@
                     </div>
                 </div>
                 <div class="column cake">
-                    <div class="contento ck">
+                    <div class="offers ck">
                         <img src="data/gallery/unknown.jpg" alt="Cake nr 9" style="width:100%">
                         <h4>Tort nr 9</h4>
                         <p>Tort czekoladowo bananowy z solonym karmelem
@@ -140,7 +139,7 @@
                     </div>
                 </div>
                 <div class="column cake">
-                    <div class="contento ck">
+                    <div class="offers ck">
                         <img src="data/gallery/unknown.jpg" alt="Cake nr 10" style="width:100%">
                         <h4>Tort nr 10</h4>
                         <p>Tort sezonowy, owocowy. (Dostępny tylko w sezonie letnim)
@@ -151,8 +150,8 @@
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Mountains" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Mountains" style="width:100%">
                         <h4>Sernik z brzoskwinią</h4>
                         <p>Kruche ciasto na spodzie, ser, brzoskwinie, pianka bezowa, tarte kruche ciasto na wierzchu
                         ,cukier puder</p>
@@ -160,32 +159,32 @@
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Lights" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Lights" style="width:100%">
                         <h4>Sernik na czekoladowym cieście</h4>
                         <p>Ciasto czekoladowe, ser, wiśnie, ciasto czekoladowe</p>
                         <p><strong>Cena:</strong> 110zł 27x38cm okrągły śred. 23cm 90zł</p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Nature" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Nature" style="width:100%">
                         <h4>Malinowa chmurka</h4>
                         <p>Ciasto kruche lub biszkoptowe, galaretka malinowa z malinami, bita śmietana z mascarpone i wanilią, beza, płatki migdałowe </p>
                         <p><strong>Cena:</strong> 110zł 27x38cm</p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Krówka</h4>
                         <p>Ciasto krucho-miodowe (4 blaty) przełożone kremem śmietanowym, na wierzchu karmel i siekane orzechy</p>
                         <p><strong>Cena:</strong> 27x38cm 110zł</p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Ciasto tortowe Ambasador</h4>
                         <p>Ciasto biszkoptowe jasne, 1 masa maślono-budyniowa z ananasem, 2 masa czekoladowa z kawałkami mlecznej czekolady,
                         konfitura z czarnej porzeczki, na wierzchu polewa czekoladowa </p>
@@ -193,98 +192,98 @@
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Ciasto tortowe czekoladowe z prażonymi orzechami</h4>
                         <p>Biszkopt czekoladowy, masa kawowa, powidła, warstwa bezowa z prażonymi orzechami, ciasto czekoladowe, polewa czekoladowa</p>
                         <p><strong>Cena:</strong> 120zł 27x38cm</p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Ciasto z sezonowymi owocami</h4>
                         <p>Biszkopt jasny (2x), masa maślano-budyniowa, owoce sezonowe, galaretka owocowa</p>
                         <p><strong>Cena:</strong> 110zł 27x38cm</p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Ciasto ananasowe</h4>
                         <p>Biszkopt jasny (2x), masa ananasowa z ananasami, na wierzchu beza kokosowa</p>
                         <p><strong>Cena: </strong>110zł 27x38cm </p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Fale Dunaju</h4>
                         <p>Ciasto waniliowo-czekoladowe z jabłkami, krememem śmietanowym z mascarpone, wanilią i polewą czekoladową</p>
                         <p><strong>Cena: </strong>110zł 27x38cm </p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Pychotka</h4>
                         <p>Ciasto kruche z powidłami i pianą orzechową (2x) przełożone kremem budyniowo-maślanym z wiśnią i polewa czekoladowa</p>
                         <p><strong>Cena: </strong>110zł 27x38cm</p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Rurki z kremem</h4>
                         <p>Krucha rurka z kremem maślano-budyniowym lub kremem śmietanowo-waniliowym, opruszona cukrem pudrem</p>
                         <p><strong>Cena: </strong>4zł za rurkę. Minimalna ilość zamówienia to 30 sztuk</p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Babeczki kruche nr 1</h4>
-                        <p>- Krucha babeczka, galaretka, krem maślano-budyniowy, krem śmietankowy, owoce</p>
+                        <p>Krucha babeczka, galaretka, krem maślano-budyniowy, krem śmietankowy, owoce</p>
                         <p><strong>Cena: </strong>5zł za babeczkę. Minimalna ilość zamówienia to 30 sztuk</p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Babeczki kruche nr 2</h4>
-                        <p>- Krucha babeczka, frużelina malinowa, bita śmietana z mascarpone, bezik, płatki migdałowe prażone</p>
+                        <p>Krucha babeczka, frużelina malinowa, bita śmietana z mascarpone, bezik, płatki migdałowe prażone</p>
                         <p><strong>Cena: </strong>5zł za babeczkę. Minimalna ilość zamówienia to 30 sztuk</p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Babeczki kruche nr 3</h4>
-                        <p>- Krucha babeczka, wiśnie, bita śmietana z czekoladą i mascarpone, wisienka koktajlowa z ogonkiem</p>
+                        <p>Krucha babeczka, wiśnie, bita śmietana z czekoladą i mascarpone, wisienka koktajlowa z ogonkiem</p>
                         <p><strong>Cena: </strong>5zł za babeczkę. Minimalna ilość zamówienia to 30 sztuk</p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Muffinki nr 1</h4>
-                        <p>- Muffinka jasna z maliną w żelu, krem śmietankowo-malinowy, na wierzchu świeża malinka lub bezik</p>
+                        <p>Muffinka jasna z maliną w żelu, krem śmietankowo-malinowy, na wierzchu świeża malinka lub bezik</p>
                         <p><strong>Cena: </strong>4zł za muffinkę. Minimalna ilość zamówienia to 30 sztuk</p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Muffinki nr 2</h4>
-                        <p>- Muffinka jugortowo-cytrynowa z cytrynowym lemon curdem i opalaną bezą włoską</p>
+                        <p>Muffinka jugortowo-cytrynowa z cytrynowym lemon curdem i opalaną bezą włoską</p>
                         <p><strong>Cena: </strong>4zł za muffinkę. Minimalna ilość zamówienia to 30 sztuk</p>
                     </div>
                 </div>
                 <div class="column pie">
-                    <div class="contento">
-                        <img src="data/gallery/tort4.jpg" alt="Car" style="width:100%">
+                    <div class="offers">
+                        <img src="data/gallery/unknown.jpg" alt="Car" style="width:100%">
                         <h4>Muffinki nr 3</h4>
-                        <p>- Muffinka czekoladowa z wiśnią w żelu, krem śmietankowy z mascarpone, esy z polewy czekoladowej, wisienka koktailowa z ogonkiem</p>
+                        <p>Muffinka czekoladowa z wiśnią w żelu, krem śmietankowy z mascarpone, esy z polewy czekoladowej, wisienka koktailowa z ogonkiem</p>
                         <p><strong>Cena: </strong>4zł za muffinkę. Minimalna ilość zamówienia to 30 sztuk</p>
                     </div>
                 </div>

@@ -17,11 +17,21 @@
     color: black;
 }
 
-#myBtnContainer {
+#sortButtonContainer {
     position: relative;
     text-align: center;
+    margin: 0 auto;
     margin-top: 15px;
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.sort-button {
+    font-family: 'Itim', cursive;
+    font-size: 16px;
+    border-radius: 40px;
 }
 
 * {
@@ -54,8 +64,7 @@
 
 }
 
-/* Content */
-.contento {
+.offers {
     background-color: white;
     padding: 10px;
     border-radius: 15px 15px 50px 50px;
@@ -68,13 +77,12 @@
 .ck {
     justify-content: flex-start;
 }
-/* The "show" class is added to the filtered elements */
+
 .show {
     display: block;
 }
 
-/* Style the buttons */
-.btn {
+.sort-button {
     border: none;
     outline: none;
     padding: 12px 16px;
@@ -82,13 +90,11 @@
     cursor: pointer;
 }
 
-/* Add a grey background color on mouse-over */
-.btn:hover {
+.sort-button:hover {
     background-color: #ddd;
 }
 
-/* Add a dark background color to the active button */
-.btn.active {
-    background-color: #666;
-    color: white;
+.sort-button.active {
+    background-color: #d4e5f7;
+    color: black;
 }

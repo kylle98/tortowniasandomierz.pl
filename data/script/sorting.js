@@ -4,10 +4,10 @@ function filterSelection(c) {
     x = document.getElementsByClassName("column");
     if (c === "all") c = "";
     for (let i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        removeClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
     }
-    const btns = document.getElementsByClassName("btn");
+    const btns = document.getElementsByClassName("sort-button");
     for (let i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", mySwitch);
         function mySwitch() {
@@ -18,7 +18,7 @@ function filterSelection(c) {
     }
 }
 
-function w3AddClass(element, name) {
+function addClass(element, name) {
     var arr1, arr2;
     arr1 = element.className.split(" ");
     arr2 = name.split(" ");
@@ -27,7 +27,7 @@ function w3AddClass(element, name) {
     }
 }
 
-function w3RemoveClass(element, name) {
+function removeClass(element, name) {
     var arr1, arr2;
     arr1 = element.className.split(" ");
     arr2 = name.split(" ");
