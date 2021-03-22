@@ -61,6 +61,8 @@
 .contento {
     background-color: white;
     padding: 10px;
+    border-radius: 0 0 50px 50px;
+    min-height: 730px;
 }
 
 /* The "show" class is added to the filtered elements */
