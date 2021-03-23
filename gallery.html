@@ -17,8 +17,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="data/script/menu.js"></script>
+        <script src="data/script/gallery.js"></script>
     </head>
-<body>
+<body onload="showSlides(slideIndex)">
     <div class="content">
         <div class="mobile-opacity" style="display: none;"></div>
         <div class="header">
@@ -42,6 +43,67 @@
         <div class="gallery-content">
             <div class="gallery-header">
                 <h1> Galeria </h1>
+            </div>
+            <div class="container">
+                <div class="mySlides">
+                    <img src="data/gallery/tort1.jpg" class="mobile-img" alt="Tort nr 1">
+                </div>
+
+                <div class="mySlides">
+                    <img src="data/gallery/tort2.jpg" class="mobile-img" alt="Tort nr 2">
+                </div>
+
+                <div class="mySlides">
+                    <img src="data/gallery/tort3.jpg" class="mobile-img" alt="Tort nr 3">
+                </div>
+
+                <div class="mySlides">
+                    <img src="data/gallery/tort4.jpg" class="mobile-img" alt="Tort nr 4">
+                </div>
+
+                <div class="mySlides">
+                    <img src="data/gallery/tort7.jpg" class="mobile-img" alt="Tort nr 7">
+                </div>
+
+                <div class="mySlides">
+                    <img src="data/gallery/tort8.jpg" class="mobile-img" alt="Tort nr 8">
+                </div>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="data/gallery/tort1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Tort nr 1">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="data/gallery/tort2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Tort nr 2">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="data/gallery/tort3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Tort nr 3">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="data/gallery/tort4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Tort nr 4">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="data/gallery/tort7.jpg" style="width:100%" onclick="currentSlide(5)" alt="Tort nr 7">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="data/gallery/tort8.jpg" style="width:100%" onclick="currentSlide(6)" alt="Tort nr 8">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-wrap">
+                <div class="firm-footer">&copy; Tortownia Sandomierz 2021</div>
+                <div class="firm-footer"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTortownia-Sandomierz-105582241612151%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" class="facebook-frame" width="340" height="70" style=";overflow:hidden"  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share; fullscreen"></iframe></div>
+                <div class="firm-footer">
+                    <div class="address-footer">ul. Wiejska 3, 27-600 Sandomierz</div>
+                    <div class="address-footer"><a href="tel:+48791404202">+48 791 404 202</a></div>
+                    <div class="address-footer"><a href="mailto:kontakt@tortowniasandomierz.pl">kontakt@tortowniasandomierz.pl</a></div>
+                </div>
             </div>
         </div>
     </div>
