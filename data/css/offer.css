@@ -25,7 +25,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-around;
-    width: 400px;
+    width: 30%;
 }
 
 .sort-button {
@@ -97,4 +97,24 @@
 .sort-button.active {
     background-color: #d4e5f7;
     color: black;
+}
+
+/* Media query */
+@media screen and (min-width: 120px) and (max-width: 1250px) {
+    #sortButtonContainer {
+        width: 80%;
+    }
+
+    .column {
+        width: 50%;
+    }
+
+    .offer-content {
+        width: 95%;
+    }
+
+    .row,
+    .row > .column {
+        padding: 4px;
+    }
 }
