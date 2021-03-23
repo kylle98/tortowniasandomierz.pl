@@ -1,0 +1,51 @@
+.index-content {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.index-header {
+    position: relative;
+    width: 70%;
+    font-size: 19px;
+    font-family: 'Itim', cursive;
+    margin: 50px auto 0;
+    text-align: center;
+    padding: 10px 0;
+    color: black;
+}
+
+.banner {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#bannerImg {
+    width: 80%;
+    height: auto;
+    border-radius: 0 0 35% 35%;
+}
+
+.seo-section {
+    position: relative;
+    font-family: 'Itim', cursive;
+    text-align: center;
+    font-size: 21px;
+    margin: 30px auto 0;
+    width: 70%;
+}
+
+@media screen and (min-width: 120px) and (max-width: 1250px) {
+    .banner {
+        width: 100%;
+    }
+
+    .index-content {
+        width: 100%;
+    }
+
+    #bannerImg {
+        width: 90%;
+    }
+}

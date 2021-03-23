@@ -1,6 +1,6 @@
 .offer-content {
     position: relative;
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .offers {
-    background-color: white;
+    background-color: #ffff;
     padding: 10px;
     border-radius: 15px 15px 50px 50px;
     min-height: 747px;
