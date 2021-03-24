@@ -1,0 +1,14 @@
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule galeria gallery.html
+RewriteRule oferta offer.html
+RewriteRule cennik prices.html
+RewriteRule kontakt contact.html
+
+<FilesMatch "\.(jpg|jpeg|png|js)$">
+Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
