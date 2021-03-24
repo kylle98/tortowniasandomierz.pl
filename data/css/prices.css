@@ -1,0 +1,68 @@
+.price-content {
+    position: relative;
+    width: 100%;
+}
+
+.prices-header {
+    position: relative;
+    width: 45%;
+    font-size: 19px;
+    font-family: 'Itim', cursive;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    border-bottom: 1px solid purple;
+    color: black;
+}
+
+.prices-text {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Itim', cursive;
+    font-size: 21px;
+}
+
+.cake-first {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 800px;
+    border-collapse: collapse;
+}
+
+.cake-first th {
+    height: 36px;
+    background: #378dff;
+    border-bottom: 2px solid blue;
+    padding: 5px 0;
+}
+
+.cake-first td {
+    text-align: center;
+    height: 36px;
+    background: #d4e5f7;
+    padding: 10px 40px;
+}
+
+.cake-first th:nth-child(2) {
+    border-left: 1px solid blue;
+    width: 100px;
+    padding: 10px 20px;
+}
+
+.cake-first td:nth-child(2) {
+    border-left: 1px solid blue;
+    width: 100px;
+    padding: 10px 20px;
+}
+
+.cake-first tr:nth-child(even) td {
+    background: #94c2ff;
+}
+
+@media screen and (min-width: 120px) and (max-width: 1250px) {
+    .cake-first {
+        width: calc(100% - 40px);
+    }
+}

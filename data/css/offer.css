@@ -78,6 +78,10 @@
     justify-content: flex-start;
 }
 
+.empty {
+    margin-top: 5vw;
+}
+
 .show {
     display: block;
 }
