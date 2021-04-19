@@ -1,3 +1,20 @@
+<?php
+if ($_COOKIE['odwiedziny']) {
+     $plika=fopen("odw.txt", "r");
+     $znaki=fgets($plika, 1500);
+     fclose($plika);
+}
+else {
+     $plika=fopen("odw.txt", "r");
+     $znaki=fgets($plika, 1500);
+     fclose($plika);
+
+     $plikb=fopen("odw.txt", "w");
+     $znaki=$znaki+1;
+     fwrite($plikb, $znaki);
+     fclose($plikb);
+     setcookie('odwiedziny','TRUE',mktime()+70000);
+}?>
 <!DOCTYPE html>
 <html lang="pl">
     <head>
@@ -53,6 +70,20 @@
                 <p>Zamówienia przyjmujemy telefonicznie lub osobiście w naszej pracowni w Sandomierzu przy ulicy Wiejskiej 3.</p>
                 <p>Oferujemy najwyższą jakość naszych wypieków.</p>
                 <p>Zapraszamy do zapoznania się z naszą ofertą!</p>
+            </div>
+            <div class="inputs">
+            <?php
+                 $plika=fopen("odw.txt", "r");
+                 $znaki=fgets($plika, 1500);
+echo <<<END
+
+
+                <h4>Naszą stronę odwiedzono już</h4>
+                <p>$znaki</p>
+                <h4>razy!</h4>
+END;
+            fclose($plika);
+             ?>
             </div>
         </div>
         <div class="footer">

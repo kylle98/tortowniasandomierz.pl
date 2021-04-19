@@ -36,6 +36,13 @@
     width: 70%;
 }
 
+.inputs {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Itim', cursive;
+}
+
 @media screen and (min-width: 120px) and (max-width: 1250px) {
     .banner {
         width: 100%;

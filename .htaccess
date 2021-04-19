@@ -12,3 +12,5 @@ RewriteRule kontakt contact.html
 <FilesMatch "\.(jpg|jpeg|png|js)$">
 Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
+
+php_value error_reporting 0
