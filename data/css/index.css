@@ -57,4 +57,8 @@
     #bannerImg {
         width: 90%;
     }
+    .footer {
+        position: relative;
+        margin-top: 75px;
+    }
 }
