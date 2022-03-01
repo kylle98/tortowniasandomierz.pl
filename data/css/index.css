@@ -41,6 +41,12 @@
     border-bottom: 1px solid purple;
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1px solid purple;
+}
+
 @media screen and (min-width: 120px) and (max-width: 1250px) {
     .banner {
         width: 100%;
