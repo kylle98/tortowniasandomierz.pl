@@ -1,0 +1,96 @@
+.gallery-content {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.gallery-header {
+    position: relative;
+    width: 100%;
+    font-size: 19px;
+    font-family: 'Itim', cursive;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    border-bottom: 1px solid purple;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    position: relative;
+    margin-top: 25px;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mobile-img {
+    width: 40%;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.caption-container {
+    text-align: center;
+    font-family: 'Itim', cursive;
+    background-color: #d4e5f7;
+    padding: 2px 16px;
+    color: #4f1743;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 0 0 25px 25px;
+}
+
+.row {
+    margin: 40px auto 0 auto;
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    width: 20%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/* Media query */
+@media screen and (min-width: 120px) and (max-width: 1250px) {
+    .gallery-content {
+        width: 90%;
+    }
+
+    .mobile-img {
+        width: 75%;
+    }
+
+    .caption-container {
+        width: 75%;
+    }
+}

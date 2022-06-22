@@ -1,10 +1,14 @@
+.content {
+    min-height: 100vh;
+}
+
 .gallery-content {
     position: relative;
     width: 70%;
     margin: 0 auto;
 }
 
-.gallery-header{
+.gallery-header {
     position: relative;
     width: 100%;
     font-size: 19px;
@@ -17,70 +21,38 @@
     color: black;
 }
 
+.linkpanel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1px;
+}
+
+.quad-gallery {
+    font-family: 'Itim', cursive;
+    display: flex;
+    color: #601953;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 5%;
+    height: 100px;
+    width: 12vw;
+    border-radius: 25px;
+    background-color: rgba(231,176,209,100);
+}
+
 * {
     box-sizing: border-box;
 }
 
-img {
-    vertical-align: middle;
+.footer {
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1px solid purple;
 }
 
-.container {
-    position: relative;
-    margin-top: 25px;
-}
-
-.mySlides {
-    display: none;
-    text-align: center;
-}
-
-.mobile-img {
-    width: 40%;
-}
-
-.cursor {
-    cursor: pointer;
-}
-
-.caption-container {
-    text-align: center;
-    font-family: 'Itim', cursive;
-    background-color: #d4e5f7;
-    padding: 2px 16px;
-    color: #4f1743;
-    width: 40%;
-    margin: 0 auto;
-    border-radius: 0 0 25px 25px;
-}
-
-.row {
-    margin: 40px auto 0 auto;
-    display: flex;
-    width: 70%;
-    flex-direction: row;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column {
-    width: 20%;
-}
-
-.demo {
-    opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
-}
 
 /* Media query */
 @media screen and (min-width: 120px) and (max-width: 1250px) {
@@ -88,11 +60,22 @@ img {
         width: 90%;
     }
 
-    .mobile-img {
-        width: 75%;
+    .linkpanel {
+        flex-wrap: wrap;
     }
 
-    .caption-container {
-        width: 75%;
+    .quad-gallery {
+        width: 35vw;
+    }
+
+    .footer {
+        position: relative;
+        margin-top: 75px;
+    }
+}
+
+@media screen and (max-height: 850px) {
+    .footer {
+        position: relative;
     }
 }

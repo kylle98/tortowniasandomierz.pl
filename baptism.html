@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- Favicon from Twemoji -->
+    <!-- Copyright 2020 Twitter, Inc and other contributors -->
+    <!-- Graphics licensed under CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/ -->
+    <meta charset="utf-8">
+    <meta name="description" content="Torty urodzinowe, okolicznościowe, komunijne, ślubne oraz ciasta czy inne domowe wypieki. Używamy naturalnych składników.">
+    <meta name="keywords" content="Torty, placki, ciasta, wypieki, domowe, naturalne składniki">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data/img/favicon.ico" type="image/png">
+    <meta name="theme-color" content="#ecd0d1">
+    <link rel="apple-touch-icon" href="data/img/apple-favicon.png">
+    <title>Tortownia Sandomierz | Torty na chrzciny</title>
+    <link rel="stylesheet" type="text/css" href="data/css/header.css"> <!-- Header style -->
+    <link rel="stylesheet" type="text/css" href="data/css/gallerycategory.css"> <!-- Category style -->
+    <link rel="stylesheet" type="text/css" href="data/css/footer.css"> <!-- Footer style -->
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="data/script/menu.js"></script>
+    <script src="data/script/gallery.js"></script>
+</head>
+<body onload="showSlides(slideIndex)">
+<div class="content">
+    <div class="mobile-opacity" style="display: none;"></div>
+    <div class="header">
+        <div class="header-wrap">
+            <div class="header-logo"></div>
+            <div class="hamburger-button" onclick="menusetting(0)">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="buttons-list">
+                <a href="https://tortowniasandomierz.pl/"><div class="main-button">Strona główna</div></a>
+                <a href="oferta"><div class="main-button">Oferta</div></a>
+                <a href="cennik"><div class="main-button">Cennik</div></a>
+                <a href="galeria"><div class="main-button">Galeria</div></a>
+                <a href="kontakt"><div class="main-button">Kontakt</div></a>
+            </div>
+            <div class="mobile" style="display: none;">
+                <a href="https://www.tortowniasandomierz.pl"><div class="mobile-button mobile-button-first" style="display: none;" onclick="menusetting(1)">Strona główna</div></a>
+                <a href="oferta"><div class="mobile-button" style="display: none;" onclick="menusetting(1)">Oferta</div></a>
+                <a href="cennik"><div class="mobile-button" style="display: none;" onclick="menusetting(1)">Cennik</div></a>
+                <a href=""><div class="mobile-button" style="display: none;" onclick="menusetting(1)">Galeria</div></a>
+                <a href="kontakt"><div class="mobile-button" style="display: none;" onclick="menusetting(1)">Kontakt</div></a>
+            </div>
+        </div>
+    </div>
+    <div class="gallery-content">
+        <div class="gallery-header">
+            <h1> Torty na chrzciny </h1>
+        </div>
+        <div class="container">
+            <div class="mySlides">
+                <img src="data/gallery/img16.jpg" class="mobile-img" alt="Chrzest Święty Michałek">
+            </div>
+            <div class="mySlides">
+                <img src="data/gallery/img51.jpg" class="mobile-img" alt="Chrzest Święty Amelii">
+            </div>
+            <div class="mySlides">
+                <img src="data/gallery/img53.jpg" class="mobile-img" alt="Chrzest Święty Oliwii">
+            </div>
+            <div class="mySlides">
+                <img src="data/gallery/img55.jpg" class="mobile-img" alt="Chrzest Święty">
+            </div>
+            <div class="mySlides">
+                <img src="data/gallery/img59.jpg" class="mobile-img" alt="Chrzest Święty Aldony">
+            </div>
+            <div class="mySlides">
+                <img src="data/gallery/img60.jpg" class="mobile-img" alt="Chrzest Święty Mikołaja">
+            </div>
+            <div class="mySlides">
+                <img src="data/gallery/img61.jpg" class="mobile-img" alt="Chrzest Święty Jakuba">
+            </div>
+            <div class="mySlides">
+                <img src="data/gallery/img71.jpg" class="mobile-img" alt="Chrzest Święty Emilii">
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="data/gallery/img12.jpg" style="width:100%" onclick="currentSlide(12)" alt="Chrzest Święty Michałek">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="data/gallery/img51.jpg" style="width:100%" onclick="currentSlide(2)" alt="Chrzest Święty Amelii">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="data/gallery/img53.jpg" style="width:100%" onclick="currentSlide(3)" alt="Chrzest Święty Oliwii">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="data/gallery/img55.jpg" style="width:100%" onclick="currentSlide(4)" alt="Chrzest Święty">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="data/gallery/img59.jpg" style="width:100%" onclick="currentSlide(5)" alt="Chrzest Święty Aldony">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="data/gallery/img60.jpg" style="width:100%" onclick="currentSlide(6)" alt="Chrzest Święty Mikołaja">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="data/gallery/img61.jpg" style="width:100%" onclick="currentSlide(7)" alt="Chrzest Święty Jakuba">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="data/gallery/img71.jpg" style="width:100%" onclick="currentSlide(8)" alt="Chrzest Święty Emilii">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-wrap">
+            <div class="firm-footer">&copy; Tortownia Sandomierz 2022</div>
+            <div class="firm-footer"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTortownia-Sandomierz-105582241612151%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" class="facebook-frame" title="facebook" width="340" height="70" style=";overflow:hidden"  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share; fullscreen"></iframe></div>
+            <div class="firm-footer">
+                <div class="address-footer">ul. Wiejska 3, 27-600 Sandomierz</div>
+                <div class="address-footer"><a href="tel:+48791404202">+48 791 404 202</a></div>
+                <div class="address-footer"><a href="mailto:kontakt@tortowniasandomierz.pl">kontakt@tortowniasandomierz.pl</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

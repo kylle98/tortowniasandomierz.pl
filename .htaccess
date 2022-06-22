@@ -8,6 +8,11 @@ RewriteRule galeria gallery.html
 RewriteRule oferta offer.html
 RewriteRule cennik prices.html
 RewriteRule kontakt contact.html
+RewriteRule okolicznosciowe occasional.html
+RewriteRule dzieciece childrenscake.html
+RewriteRule komunijne communion.html
+RewriteRule chrzest baptism.html
+RewriteRule slubne  wedding.html
 
 <FilesMatch "\.(jpg|jpeg|png|js)$">
 Header set Cache-Control "max-age=31536000, public"
